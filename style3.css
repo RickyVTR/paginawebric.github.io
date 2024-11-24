@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url('https://th.bing.com/th/id/R.339e39eb7aef1229d09d4ba278dec114?rik=ba1XJYgpc%2benQw&pid=ImgRaw&r=0');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed; 
+    min-height: 100vh; 
+}
+
+.menu-container {
+    position: relative;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    background-color: rgba(24, 19, 70, 0.904);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    transition: left 0.5s ease; 
+    border-radius: 5px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -300px; 
+    width: 300px;
+    height: 100%;
+    background-color: rgba(50, 47, 78, 0.8);
+    transition: left 0.5s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.521);
+    overflow-y: auto; 
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.menu li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: transform 0.2s;
+}
+
+.menu li a:hover {
+    transform: scale(1.2);
+}
+
+
+.menu li a img {
+    width: 24px; 
+    height: auto; 
+    margin-right: 10px; 
+}
+
+.menu.show {
+    left: 0; 
+}
+
+.menu-btn.show {
+    left: 310px; 
+}
+
+.info-block {
+    margin: 20px;
+    padding: 15px;
+    background-color: rgba(49, 51, 71, 0.76);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(71, 13, 13, 0.1);
+    color: rgb(255, 255, 255);
+}
+
+.image-container {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 15px;
+}
+
+.image-container img {
+    max-width: 100px; 
+    height: auto; 
+    margin: 0 10px; 
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    background-color: #252635f6;
+    color: white;
+    
+}
+.imagen-izquierda {
+    float: left; 
+    margin-right: 15px; 
+    max-width: auto; 
+    height: auto; 
+}
+::-webkit-scrollbar {
+    width: 8px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(6, 10, 48, 0.5);
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-track { background: rgba(2, 6, 255, 0.541);
+}
+

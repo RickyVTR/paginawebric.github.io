@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url('https://1.bp.blogspot.com/-JCw0pdyp_7w/VAc1kOrvoFI/AAAAAAACTXY/FvawFkSX_Gs/s1600/paisajes%2Bnaturales%2B-%2Bnaturaleza%2B-%2Bnatural%2Bfree%2Blandscapes%2B-%2Bfotos%2Bde%2Bpaisajes%2B(4).jpg');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en la página */
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+    min-height: 100vh; /* Asegura que el fondo cubra al menos toda la altura de la ventana */
+}
+
+.menu-container {
+    position: relative;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 10px; /* Posición inicial */
+    background-color: rgba(45, 68, 42, 0.904);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    transition: left 0.5s ease; /* Transición suave */
+    border-radius: 5px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Oculto inicialmente */
+    width: 300px;
+    height: 100%;
+    background-color: rgba(68, 104, 63, 0.8);
+    transition: left 0.5s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.521);
+    overflow-y: auto; /* Permite el desplazamiento dentro del menú */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.menu li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: transform 0.2s;
+}
+
+.menu li a:hover {
+    transform: scale(1.2);
+}
+
+/* Ajustar el tamaño de las imágenes dentro de los enlaces del menú */
+.menu li a img {
+    width: 24px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.menu.show {
+    left: 0; /* Muestra el menú al hacer clic */
+}
+
+.menu-btn.show {
+    left: 310px; /* Mueve el botón al lado del menú cuando está abierto */
+}
+
+.info-block {
+    margin: 20px;
+    padding: 15px;
+    background-color: rgba(67, 83, 56, 0.76);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(71, 13, 13, 0.1);
+    color: rgb(255, 255, 255);
+}
+
+.image-container {
+    display: flex; /* Usamos flexbox para centrar las imágenes */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    margin-top: 15px; /* Espacio entre el texto y las imágenes */
+}
+
+.image-container img {
+    max-width: 100px; /* Ajusta el tamaño máximo de las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 0 10px; /* Espacio entre las imágenes si hay más de una */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #608a5b;
+    color: white;
+    
+}
+.imagen-izquierda {
+    float: left; /* Alinea la imagen a la izquierda */
+    margin-right: 15px; /* Espacio a la derecha de la imagen */
+    max-width: auto; /* Asegura que la imagen sea responsive */
+    height: auto; 
+}
+
+::-webkit-scrollbar {
+    width: 8px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.2); 
+ }
+

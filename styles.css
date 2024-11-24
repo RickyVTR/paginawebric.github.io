@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://s1.1zoom.me/b5050/184/373525-blackangel_1920x1080.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container {
+    position: relative;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 10px; /* Posición inicial */
+    background-color: rgba(255, 165, 0, 0.8);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    transition: left 0.5s ease; /* Transición suave */
+    border-radius: 5px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Oculto inicialmente */
+    width: 300px;
+    height: 100%;
+    background-color: rgba(255, 165, 0, 0.8);
+    transition: left 0.5s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.menu li img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.menu.show {
+    left: 0; /* Muestra el menú al hacer clic */
+}
+
+.menu-btn.show {
+    left: 310px; /* Mueve el botón al lado del menú cuando está abierto */
+}
+
+.menu li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s;
+}
+
+.menu li a:hover {
+    transform: scale(1.2);
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.block {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 45%;
+    text-align: justify;
+}
+
+.block h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.block:nth-child(odd) {
+    align-self: flex-start;
+}
+
+.block:nth-child(even) {
+    align-self: flex-end;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
